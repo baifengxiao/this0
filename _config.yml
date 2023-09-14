@@ -112,7 +112,7 @@ markdown:
 plugins:
   - hexo-algoliasearch
 
-#this0的algolia_search配置
+#this0的algolia_search配置                     #记得在algolia网站里面配置自己的网址
 algolia:
   appId: ""                         #替换为自己的
   apiKey: ""  #替换为自己的
