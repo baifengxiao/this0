@@ -128,3 +128,8 @@ algolia:
     - slug
     - tags
     - title
+
+#音乐插件
+aplayer:
+  meting: true
+  asset_inject: false
