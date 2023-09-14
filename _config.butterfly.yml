@@ -292,7 +292,7 @@ busuanzi:
   site_pv: true
   page_pv: true
 
-# Time difference between publish date and now (網页運行时間)
+# Time difference between publish date and now (网页運行时間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
@@ -444,7 +444,7 @@ disqus:
   apikey: # For newest comments widget
 
 # Alternative Disqus - Render comments with Disqus API
-# DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
+# DisqusJS 評論系統，可以實現在网路審查地區載入 Disqus 評論列表，兼容原版
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
   shortname:
@@ -584,7 +584,7 @@ messenger:
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+baidu_analytics:       #替换成你的
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
@@ -630,7 +630,7 @@ site_verification:
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 
-# theme_color:
+# theme_color:   #主题配色
 #   enable: true
 #   main: "#49B1F5"
 #   paginator: "#00c4b6"
@@ -655,16 +655,16 @@ index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem (主页top_img高度)
 index_top_img_height:
 
-# The user interface setting of category and tag page (category和tag页的UI設置)
+# The user interface setting of category and tag page (category和tag页的UI替换)
 # index - same as Homepage UI (index 值代表 UI將與首页的UI一樣)
 # default - same as archives UI 默认跟archives页面UI一樣
 category_ui: # 留空或 index
 tag_ui: # 留空或 index
 
-# Website Background (設置網站背景)
-# can set it to color or image (可設置图片 或者 顔色)
+# Website Background (替换网站背景)
+# can set it to color or image (可替换图片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/pc%E7%AB%AF%E7%99%BD%E5%A4%A9.jpg)
 
 # Footer Background
 footer_bg: false
@@ -677,7 +677,7 @@ mask:
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默认單位為px)
 rightside-bottom:
 
-# Enter transitions (開啓網页進入效果)
+# Enter transitions (開啓网页進入效果)
 enter_transitions: true
 
 # Typewriter Effect (打字效果)
@@ -738,7 +738,7 @@ ClickShowText:
   random: false
   mobile: false
 
-# Default display mode (網站默认的显示模式)
+# Default display mode (网站默认的显示模式)
 # light (default) / dark
 display_mode: light
 
@@ -758,12 +758,12 @@ font:
   code-font-family:
 
 # Font settings for the site title and site subtitle
-# 左上角網站名字 主页居中網站名字
+# 左上角网站名字 主页居中网站名字
 blog_title_font:
   font_link:
   font-family:
 
-# The setting of divider icon (水平分隔線图標設置)
+# The setting of divider icon (水平分隔線图標替换)
 hr_icon:
   enable: true
   icon: # the unicode value of Font Awesome icon, such as '\3423'
@@ -779,8 +779,8 @@ subtitle:
   typed_option:
   # source 調用第三方服務
   # source: false 關閉調用
-  # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
-  # source: 2  調用一句網（簡體） https://yijuzhan.com/
+  # source: 1  調用一言网的一句話（簡體） https://hitokoto.cn/
+  # source: 2  調用一句网（簡體） https://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先显示 source , 再显示 sub 的內容
   source: false
@@ -936,7 +936,7 @@ inject:
 CDN:
   # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
-  # Dev version can only choose. ( dev版的主題只能設置為 local )
+  # Dev version can only choose. ( dev版的主題只能替换為 local )
   internal_provider: local
 
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
