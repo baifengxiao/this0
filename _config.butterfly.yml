@@ -296,7 +296,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 6/7/2023 7:04:00
+  publish_date: 9/15/2023 16:42:26
 
 # Aside widget - Newest Comments 最新评论
 newest_comments:
@@ -351,8 +351,6 @@ rightside_item_order:
   hide: # readmode,translate,darkmode,hideAside
   show: # toc,chat,comment
 
-#todo
-
 # Math (數學)
 # --------------------------------------
 # About the per_page
@@ -377,9 +375,13 @@ katex:
 
 # Algolia search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "我们没有找到任何搜索结果: ${query}"
+    hits_stats: "找到${hits}条结果（用时${time} ms）"
 
 # Local search
 local_search:

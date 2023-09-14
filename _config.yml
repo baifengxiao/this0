@@ -104,3 +104,27 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+markdown:
+  plugins:
+    - '@renbaoshuo/markdown-it-katex' #启用KaTeX插件 因为 KaTeX 更快更轻量，因此没有 MathJax 的功能多（比如右键菜单）
+
+plugins:
+  - hexo-algoliasearch
+
+#this0的algolia_search配置
+algolia:
+  appId: ""                         #替换为自己的
+  apiKey: ""  #替换为自己的
+  adminApiKey: ""   #替换为自己的
+  chunkSize: 5000
+  indexName: ""                #替换为自己的
+  fields:
+    - content:strip:truncate,0,30000
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
