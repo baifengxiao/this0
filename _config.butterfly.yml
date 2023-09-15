@@ -300,7 +300,7 @@ runtimeshow:
 
 # Aside widget - Newest Comments 最新评论
 newest_comments:
-  enable: true
+  enable: false
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
@@ -683,7 +683,7 @@ enter_transitions: true
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: false
+  enable: true
   colorful: true # open particle animation (冒光特效)
   shake: true #  open shake (抖動特效)
   mobile: false
@@ -724,7 +724,7 @@ fireworks:
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
 click_heart:
-  enable: false
+  enable: true
   mobile: false
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
@@ -744,10 +744,10 @@ display_mode: light
 
 # Beautify (美化页面显示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
-  title-prefix-icon: # '\f0c1'
-  title-prefix-icon-color: # '#F47466'
+  title-prefix-icon: '\f56b' # '\f0c1'
+  title-prefix-icon-color: '#F47466' # '#F47466'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -771,7 +771,7 @@ hr_icon:
 
 # the subtitle on homepage (主页subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Customize typed.js (配置typed.js)
@@ -779,17 +779,17 @@ subtitle:
   typed_option:
   # source 調用第三方服務
   # source: false 關閉調用
-  # source: 1  調用一言网的一句話（簡體） https://hitokoto.cn/
+   source: 1  #調用一言网的一句話（簡體） https://hitokoto.cn/
   # source: 2  調用一句网（簡體） https://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先显示 source , 再显示 sub 的內容
-  source: false
+  source: true
   # 如果關閉打字效果，subtitle 只會显示 sub 的第一行文字
   sub:
 
 # Loading Animation (加載動畫)
 preloader:
-  enable: false
+  enable: true
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
