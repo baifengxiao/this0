@@ -799,16 +799,16 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size:
-  code-font-size:
-  font-family:
-  code-font-family:
+  global-font-size: '15px'
+  code-font-size: '14px'
+  font-family: JNMYT
+  code-font-family: JNMYT
 
 # Font settings for the site title and site subtitle
 # 左上角网站名字 主页居中网站名字
 blog_title_font:
   font_link:
-  font-family:
+  font-family: JNMYT
 
 # The setting of divider icon (水平分隔線图標替换)
 hr_icon:
