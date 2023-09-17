@@ -36,3 +36,10 @@
     /* 定义显示样式 */
     font-display: block;
 }
+
+/*插件有个bug，就是最后一页文章数目为奇数的时候，会出现这种情况,修复*/
+/* 翻页按钮居中 */
+#pagination {
+    width: 100%;
+    margin: auto;
+}

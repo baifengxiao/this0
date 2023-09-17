@@ -161,3 +161,7 @@ live2d:
       show: false # 手机中是否展示
     react:
       opacity: 0.7
+
+#更换文章双栏显示样式
+butterfly_article_double_row:
+  enable: true
