@@ -201,7 +201,7 @@ toc:
 #  如果有文章（例如：转载文章）不需要显示版权，可以在文章Front-matter单独设置
 post_copyright:
   enable: true
-  decode: false
+  decode: true 文章标题解码（中文标题受影响）
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
