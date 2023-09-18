@@ -738,7 +738,13 @@ tag_ui: # 留空或 index
 # Website Background (替换网站背景)
 # can set it to color or image (可替换图片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/pc%E7%AB%AF%E7%99%BD%E5%A4%A9.jpg)
+#background: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/pc%E7%AB%AF%E7%99%BD%E5%A4%A9.jpg)
+
+background:
+  default: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/pc%E7%AB%AF%E7%99%BD%E5%A4%A9.jpg) #【必选】默认背景
+  darkmode: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/PC%E7%AB%AF%E9%BB%91%E5%A4%9C.JPG); #【可选】PC端夜间模式背景
+  mobileday: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/pc%E7%AB%AF%E7%99%BD%E5%A4%A9.jpg) #【可选】移动端日间默认背景
+  mobilenight: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/PC%E7%AB%AF%E9%BB%91%E5%A4%9C.JPG); #【可选】移动端夜间模式背景
 
 # Footer Background
 footer_bg: false
