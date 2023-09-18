@@ -1011,6 +1011,8 @@ css_prefix: true
 inject:
   head:
 #     - <link rel="stylesheet" href="/xxx.css">
+#     - <script src="https://npm.elemecdn.com/echarts@4.9.0/map/js/china.js"></script> # 绘制地图需要另外添加 china.js
+     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
      - <link rel="stylesheet" href="https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/elementui2.15.6/index.css"> # 引入组件库(f12)
      - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="/css/universe.css">
