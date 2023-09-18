@@ -40,12 +40,22 @@ code_word_wrap: false #代码自动换行
 # formal:
 #   icon: link(跳转链接) || the description || color
 #  社交图标 (Social Settings)
-social:
+#social:
 #   fab fa-github: https://github.com/xxxxx || Github || '#24292e'
 #   fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
-  fa-brands fa-github-alt: https://github.com/baifengxiao || 站长的Github
-  fa-brands fa-weixin: /img/QRcode_weixin.jpg || 站长的微信
-  fa-brands fa-bilibili: https://space.bilibili.com/3537120402606393 || 站长的B站空间
+#  原版的社交图标
+#  fa-brands fa-github-alt: https://github.com/baifengxiao || 站长的Github
+#  fa-brands fa-weixin: /img/QRcode_weixin.jpg || 站长的微信
+#  fa-brands fa-bilibili: https://space.bilibili.com/3537120402606393 || 站长的B站空间
+
+#新版的社交图标
+social:
+  # iconfont多彩图标
+  Github: https://github.com/baifengxiao || icon-rat || faa-tada
+  # fontawesome单色图标
+  Email: mailto:2686630689@qq.com || fas fa-envelope || faa-tada
+  # iconfont单色图标
+  Bilibili: https://space.bilibili.com/3537120402606393 || icon-ox || faa-tada
 
 # Image (图片设置)
 # --------------------------------------
