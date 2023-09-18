@@ -7,4 +7,5 @@ function iconFont(args) {
     return `<svg class="icon" style="width:${p1}em; height:${p1}em" aria-hidden="true"><use xlink:href="#${p0}"></use></svg>`;
 }
 
+
 hexo.extend.tag.register('icon',iconFont);
