@@ -11,12 +11,28 @@ nav:
 #  必须是 /xxx/，后面||分开，然后写图标名，例如fas。
 #  如果不希望显示图标，图标名可不写。
 #  默认子目录是展开的，如果你想要隐藏，在子目录里添加 hide 。
+#menu:
+#  首页: / || fas fa-home
+#  文章 || fas || faa-tada:
+#    归档: /archives/ || icon-wenzhang
+#    标签: /tags/ || fas fa-tags
+#    分类: /categories/ || fas fa-folder-open
+#  时间轴: /archives/ || fas fa-archive
+#  清单||fa fa-heartbeat:
+#    音乐: /music/ || fas fa-music
+#    照片: /Gallery/ || fas fa-images
+#    电影: /movies/ || fas fa-video
+#  友链: /link/ || fas fa-link
+#  关于: /about/ || fas fa-heart
+
+#彩色标签
 menu:
-  首页: / || fas fa-home
-  文章 || fas || faa-tada:
-    归档: /archives/ || icon-wenzhang
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
+  首页: / || icon-home || faa-tada
+  文章 || icon--article || faa-tada || hide:
+    归档: /archives/ || icon-guidang || faa-tada
+    标签: /tags/ || icon-- || faa-tada
+    分类: /categories/ || icon-wenjianjia || faa-tada
+#    随便逛逛: javascript:randomPost(); || icon-zuji1 || faa-tada
   时间轴: /archives/ || fas fa-archive
   清单||fa fa-heartbeat:
     音乐: /music/ || fas fa-music
@@ -24,7 +40,6 @@ menu:
     电影: /movies/ || fas fa-video
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
-
 
 # Code Blocks (代码相关配置)
 # --------------------------------------
@@ -50,12 +65,14 @@ code_word_wrap: false #代码自动换行
 
 #新版的社交图标
 social:
+  # 微信
+  weixin: /img/QRcode_weixin.jpg || icon-shejiaotubiao-01 || faa-tada
   # iconfont多彩图标
-  Github: https://github.com/baifengxiao || icon-rat || faa-tada
+  Github: https://github.com/baifengxiao || icon-github || faa-tada
   # fontawesome单色图标
-  Email: mailto:2686630689@qq.com || fas fa-envelope || faa-tada
+  Email: mailto:2686630689@qq.com || icon-xiaoxi || faa-tada
   # iconfont单色图标
-  Bilibili: https://space.bilibili.com/3537120402606393 || icon-ox || faa-tada
+  Bilibili: https://space.bilibili.com/3537120402606393 || icon-bilibili || faa-tada
 
 # Image (图片设置)
 # --------------------------------------
@@ -1157,6 +1174,6 @@ tag_plugins:
     anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
     jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
     issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
-    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
+    iconfont: //at.alicdn.com/t/c/font_4256434_kbg9ooxwyoo.js #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
