@@ -660,7 +660,7 @@ messenger:
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:       #替换成你的
+baidu_analytics: 69555e56af02802dce6ab5f0d75ea75a      #替换成你的
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
@@ -1013,8 +1013,8 @@ css_prefix: true
 inject:
   head:
 #     - <link rel="stylesheet" href="/xxx.css">
-#     - <script src="https://npm.elemecdn.com/echarts@4.9.0/map/js/china.js"></script> # 绘制地图需要另外添加 china.js
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
+     - <script src="https://npm.elemecdn.com/echarts@4.9.0/map/js/china.js"></script> # 绘制地图需要另外添加 china.js
      - <link rel="stylesheet" href="https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/elementui2.15.6/index.css"> # 引入组件库(f12)
      - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="/css/universe.css">
