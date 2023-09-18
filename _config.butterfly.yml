@@ -14,7 +14,7 @@ nav:
 menu:
   首页: / || fas fa-home
   文章 || fas || faa-tada:
-    归档: /archives/ || icon-guidang
+    归档: /archives/ || icon-wenzhang
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
   时间轴: /archives/ || fas fa-archive

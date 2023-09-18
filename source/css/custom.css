@@ -233,3 +233,12 @@ svg.icon {
     fill: currentColor;
     overflow: hidden;
 }
+
+/*新的动态图标的css*/
+svg.icon {
+    width: 1.28em;
+    height: 1.28em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
