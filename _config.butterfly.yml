@@ -1021,6 +1021,8 @@ inject:
   bottom:
 #     - <script src="xxxx"></script>
      - <script src="/js/share.js"></script>  #分享+全局防抖函数
+     - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
+     - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
      - <script src="/js/sun_moon.js"></script>
      - <script src="/js/card_weibo.js"></script>
      - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
