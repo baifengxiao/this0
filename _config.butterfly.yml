@@ -11,12 +11,28 @@ nav:
 #  必须是 /xxx/，后面||分开，然后写图标名，例如fas。
 #  如果不希望显示图标，图标名可不写。
 #  默认子目录是展开的，如果你想要隐藏，在子目录里添加 hide 。
+#menu:
+#  首页: / || fas fa-home
+#  文章 || fas || faa-tada:
+#    归档: /archives/ || icon-wenzhang
+#    标签: /tags/ || fas fa-tags
+#    分类: /categories/ || fas fa-folder-open
+#  时间轴: /archives/ || fas fa-archive
+#  清单||fa fa-heartbeat:
+#    音乐: /music/ || fas fa-music
+#    照片: /Gallery/ || fas fa-images
+#    电影: /movies/ || fas fa-video
+#  友链: /link/ || fas fa-link
+#  关于: /about/ || fas fa-heart
+
+#彩色标签
 menu:
-  首页: / || fas fa-home
-  文章 || fas || faa-tada:
-    归档: /archives/ || icon-wenzhang
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
+  首页: / || icon-home || faa-tada
+  文章 || icon--article || faa-tada || hide:
+    归档: /archives/ || icon-guidang || faa-tada
+    标签: /tags/ || icon-- || faa-tada
+    分类: /categories/ || icon-wenjianjia || faa-tada
+  #    随便逛逛: javascript:randomPost(); || icon-zuji1 || faa-tada
   时间轴: /archives/ || fas fa-archive
   清单||fa fa-heartbeat:
     音乐: /music/ || fas fa-music
@@ -24,7 +40,6 @@ menu:
     电影: /movies/ || fas fa-video
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
-
 
 # Code Blocks (代码相关配置)
 # --------------------------------------
@@ -50,12 +65,14 @@ code_word_wrap: false #代码自动换行
 
 #新版的社交图标
 social:
+  # 微信
+  weixin: /img/QRcode_weixin.jpg || icon-shejiaotubiao-01 || faa-tada
   # iconfont多彩图标
-  Github: https://github.com/baifengxiao || icon-rat || faa-tada
+  Github: https://github.com/baifengxiao || icon-github || faa-tada
   # fontawesome单色图标
-  Email: mailto:2686630689@qq.com || fas fa-envelope || faa-tada
+  Email: mailto:2686630689@qq.com || icon-xiaoxi || faa-tada
   # iconfont单色图标
-  Bilibili: https://space.bilibili.com/3537120402606393 || icon-ox || faa-tada
+  Bilibili: https://space.bilibili.com/3537120402606393 || icon-bilibili || faa-tada
 
 # Image (图片设置)
 # --------------------------------------
@@ -109,7 +126,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (当沒有设置cover时，默认的封面显示)
   default_cover:
-     - https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/default-cover.jpg
+    - https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/default-cover.jpg
 
 # Replace Broken Images (替换无法显示的图片)
 #TODO
@@ -193,12 +210,12 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-     - img: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/wechat.jpg
-       link: #link可以不写，会默认为图片的链接。
-       text: 微信
-     - img: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/alipay.jpg
-       link:
-       text: 支付宝
+    - img: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/wechat.jpg
+      link: #link可以不写，会默认为图片的链接。
+      text: 微信
+    - img: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/alipay.jpg
+      link:
+      text: 支付宝
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -269,15 +286,15 @@ footer_beautify:
     - link: https://butterfly.js.org/
       shields: https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender
       message: 主题版本Butterfly_v4.9.0
-#    - link: https://www.jsdelivr.com/
-#      shields: https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
-#      message: 本站使用JsDelivr为静态资源提供CDN加速
-#    - link: https://vercel.com/
-#      shields: https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&logo=Vercel
-#      message: 本站采用双线部署，默认线路托管于Vercel
-#    - link: https://vercel.com/
-#      shields: https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio
-#      message: 本站采用双线部署，联通线路托管于Coding
+    #    - link: https://www.jsdelivr.com/
+    #      shields: https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
+    #      message: 本站使用JsDelivr为静态资源提供CDN加速
+    #    - link: https://vercel.com/
+    #      shields: https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&logo=Vercel
+    #      message: 本站采用双线部署，默认线路托管于Vercel
+    #    - link: https://vercel.com/
+    #      shields: https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio
+    #      message: 本站采用双线部署，联通线路托管于Coding
     - link: https://github.com/
       shields: https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub
       message: 本站项目由Github托管
@@ -676,10 +693,10 @@ google_adsense:
 # --------------------------------------
 
 site_verification:
-  # - name: google-site-verification
-  #   content: xxxxxx
-  # - name: baidu-site-verification
-  #   content: xxxxxxx
+# - name: google-site-verification
+#   content: xxxxxx
+# - name: baidu-site-verification
+#   content: xxxxxxx
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -788,9 +805,9 @@ click_heart:
 ClickShowText:
   enable: false
   text:
-    # - I
-    # - LOVE
-    # - YOU
+  # - I
+  # - LOVE
+  # - YOU
   fontSize: 15px
   random: false
   mobile: false
@@ -842,7 +859,7 @@ subtitle:
   # source: 2  调用一句网（简体） http://yijuzhan.com/
   # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
   # subtitle 会先显示 source , 再显示 sub 的内容
-#  source: false
+  #  source: false
   # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
   sub:
 #    - 今日事&#44;今日毕
@@ -919,8 +936,8 @@ note:
 pjax:
   enable: true
   exclude:
-    # - xxxx
-    # - xxxx
+  # - xxxx
+  # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
@@ -971,13 +988,13 @@ lazyload:
 Open_Graph_meta:
   enable: true
   option:
-    # twitter_card:
-    # twitter_image:
-    # twitter_id:
-    # twitter_site:
-    # google_plus:
-    # fb_admins:
-    # fb_app_id:
+  # twitter_card:
+  # twitter_image:
+  # twitter_id:
+  # twitter_site:
+  # google_plus:
+  # fb_admins:
+  # fb_app_id:
 
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
@@ -987,17 +1004,17 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-#     - <link rel="stylesheet" href="/xxx.css">
-     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
-     - <link rel="stylesheet" href="/css/universe.css">
+    #     - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/universe.css">
   bottom:
-#     - <script src="xxxx"></script>
-     - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-autoplay="false"> </div>
-     - <canvas id="universe"></canvas>
-     - <script defer src="/js/universe.js"></script>
-     - <script defer src="/js/iconfont.js"></script>
-     - <script async src="//at.alicdn.com/t/c/font_4256434_c7i7r8bazx.js"></script>
-#     - <div class="aplayer no-destroy" data-id="" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-autoplay="true"> </div>
+    #     - <script src="xxxx"></script>
+    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-autoplay="false"> </div>
+    - <canvas id="universe"></canvas>
+    - <script defer src="/js/universe.js"></script>
+    - <script defer src="/js/iconfont.js"></script>
+    - <script async src="//at.alicdn.com/t/c/font_4256434_c7i7r8bazx.js"></script>
+    #     - <div class="aplayer no-destroy" data-id="" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-autoplay="true"> </div>
     # data-id，data-server，data-type替换为你自己的歌单数据
 
 # CDN
@@ -1022,62 +1039,62 @@ CDN:
   custom_format:
 
   option:
-    # main_css:
-    # main:
-    # utils:
-    # translate:
-    # local_search:
-    # algolia_js:
-    # algolia_search:
-    # instantsearch:
-    # docsearch_js:
-    # docsearch_css:
-    # pjax:
-    # gitalk:
-    # gitalk_css:
-    # blueimp_md5:
-    # valine:
-    # disqusjs:
-    # disqusjs_css:
-    # twikoo:
-    # waline_js:
-    # waline_css:
-    # giscus:
-    # sharejs:
-    # sharejs_css:
-    # mathjax:
-    # katex:
-    # katex_copytex:
-    # mermaid:
-    # canvas_ribbon:
-    # canvas_fluttering_ribbon:
-    # canvas_nest:
-    # lazyload:
-    # instantpage:
-    # typed:
-    # pangu:
-    # fancybox_css:
-    # fancybox:
-    # medium_zoom:
-    # snackbar_css:
-    # snackbar:
-    # activate_power_mode:
-    # fireworks:
-    # click_heart:
-    # ClickShowText:
-    # fontawesome:
-    # flickr_justified_gallery_js:
-    # flickr_justified_gallery_css:
-    # aplayer_css:
-    # aplayer_js:
-    # meting_js:
-    # prismjs_js:
-    # prismjs_lineNumber_js:
-    # prismjs_autoloader:
-    # artalk_js:
-    # artalk_css:
-    # busuanzi:
-    # abcjs_basic_js:
+  # main_css:
+  # main:
+  # utils:
+  # translate:
+  # local_search:
+  # algolia_js:
+  # algolia_search:
+  # instantsearch:
+  # docsearch_js:
+  # docsearch_css:
+  # pjax:
+  # gitalk:
+  # gitalk_css:
+  # blueimp_md5:
+  # valine:
+  # disqusjs:
+  # disqusjs_css:
+  # twikoo:
+  # waline_js:
+  # waline_css:
+  # giscus:
+  # sharejs:
+  # sharejs_css:
+  # mathjax:
+  # katex:
+  # katex_copytex:
+  # mermaid:
+  # canvas_ribbon:
+  # canvas_fluttering_ribbon:
+  # canvas_nest:
+  # lazyload:
+  # instantpage:
+  # typed:
+  # pangu:
+  # fancybox_css:
+  # fancybox:
+  # medium_zoom:
+  # snackbar_css:
+  # snackbar:
+  # activate_power_mode:
+  # fireworks:
+  # click_heart:
+  # ClickShowText:
+  # fontawesome:
+  # flickr_justified_gallery_js:
+  # flickr_justified_gallery_css:
+  # aplayer_css:
+  # aplayer_js:
+  # meting_js:
+  # prismjs_js:
+  # prismjs_lineNumber_js:
+  # prismjs_autoloader:
+  # artalk_js:
+  # artalk_css:
+  # busuanzi:
+  # abcjs_basic_js:
 
 # envelope_comment
 # see https://akilar.top/posts/e2d3c450/
@@ -1157,6 +1174,6 @@ tag_plugins:
     anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
     jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
     issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
-    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
+    iconfont: //at.alicdn.com/t/c/font_4256434_kbg9ooxwyoo.js #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
