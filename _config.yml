@@ -164,4 +164,4 @@ live2d:
 
 #更换文章双栏显示样式
 butterfly_article_double_row:
-  enable: true
+  enable: false
