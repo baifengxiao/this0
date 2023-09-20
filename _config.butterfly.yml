@@ -583,7 +583,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:       #替换为自己的api
+  envId: https://twikoo-three-hazel.vercel.app      #替换为自己的api
   region: ap-chengdu  #替换为自己的区域，可选
   visitor: false   #是否显示阅读数
   option:
@@ -646,7 +646,7 @@ daovoice:
 # https://crisp.chat/en/
 crisp:
   enable: true
-  website_id:  #替换为自己的
+  website_id: 6a9fd556-c343-47a3-9b3c-d19b7402038e  #替换为自己的
 
 # messenger
 # https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/
