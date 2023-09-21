@@ -949,7 +949,7 @@ pjax:
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: true
+  enable: false
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -1028,7 +1028,7 @@ inject:
     - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
     - <script async src="https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/vue2.6.14/vue.min.js"></script> # 引入VUE(f12)
     - <script async src="https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/elementui2.15.6/index.js"></script> # 引入ElementUI(f12)
-    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-autoplay="false"> </div>
+#    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-autoplay="false"> </div>
     - <canvas id="universe"></canvas>
     - <script defer src="/js/universe.js"></script>
     - <script defer src="/js/iconfont.js"></script>
