@@ -7,6 +7,10 @@ description: 文章描述
 swiper_index: 1 #置顶轮播图顺序，非负整数，数字越大越靠前
 categories:
   - Hello World
+abbrlink: 3bf4a27
+date:
+updated:
+cover:
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
